@@ -1,0 +1,303 @@
+/* Fonte e Alinhamento Global */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Seção Header */
+header {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 50px 0;
+}
+
+header h1 {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+}
+
+header p {
+    font-size: 1.5rem;
+}
+
+/* Seção Sobre */
+#sobre {
+    padding: 60px 0;
+}
+
+#sobre h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    font-weight: bold;
+    color: #333;
+}
+
+#sobre p {
+    font-size: 1.1rem;
+    color: #666;
+    text-align: justify;
+}
+
+/* Seção Formação Acadêmica e Cursos */
+#formacao {
+    background-color: #f9f9f9;
+    padding: 60px 0;
+}
+
+#formacao h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    font-weight: bold;
+    color: #333;
+}
+
+#formacao .row {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 20px;
+}
+
+#formacao .col-md-6 {
+    justify-content: center;
+    flex: 1;
+}
+
+#formacao .card {
+    border: 2px solid #ddd;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    transition: all 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+}
+
+#formacao .card-body {
+    padding: 20px;
+    background-color: #fafafa;
+    border-radius: 12px;
+}
+
+#formacao .card-title {
+    font-size: 1.6rem;
+    margin-bottom: 15px;
+    font-weight: bold;
+    color: #5D5D5D;
+}
+
+#formacao p, #formacao ul {
+    font-size: 1rem;
+    color: #666;
+}
+
+#formacao ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+#formacao ul li {
+    margin-bottom: 10px;
+}
+
+#formacao .card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+    border-color: #007bff;
+}
+
+/* Estilos da seção de Certificados */
+#certificados {
+    background-color: #f9f9f9;
+    padding: 60px 0;
+}
+
+#certificados h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #333;
+    font-weight: bold;
+}
+
+#certificados .card {
+    border-radius: 10px; /* Bordas arredondadas */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: #fff;
+    border: none; /* Remove a borda padrão do card */
+}
+
+#certificados .card-body {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Garante que o conteúdo não fique esticado */
+}
+
+#certificados .card-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #007bff;
+    margin-bottom: 15px;
+}
+
+#certificados .card p {
+    font-size: 1rem;
+    color: #555;
+}
+
+#certificados .card:hover {
+    transform: translateY(-5px); /* Eleva o card quando o mouse passa sobre ele */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+#certificados .col-md-4 {
+    display: flex;
+    justify-content: center;
+}
+
+#certificados .card-body p small {
+    display: block;
+    font-style: italic;
+    color: #888;
+}
+
+/* Estilos para a lista de cursos dentro do card */
+.course-list {
+    max-height: 200px; /* Limita a altura máxima do card */
+    overflow-y: auto;  /* Habilita rolagem vertical */
+    padding-right: 15px; /* Espaçamento para a rolagem */
+}
+
+.course-list ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.course-list ul li {
+    margin-bottom: 10px;
+}
+
+.course-list ul li a {
+    color: #007bff;
+    text-decoration: none;
+    font-size: 0.95rem;
+}
+
+.course-list ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Ajusta o layout do card para garantir que ele tenha uma altura consistente */
+#certificados .card-body {
+    display: flex;
+    flex-direction: column;
+    height: 200px; /* Define uma altura fixa para todos os cards */
+    justify-content: flex-start; /* Alinha o conteúdo na parte superior */
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    #certificados .card-title {
+        font-size: 1rem;
+    }
+
+    #certificados h2 {
+        font-size: 2rem;
+    }
+}
+
+/* Seção Habilidades */
+#habilidades {
+    background-color: #f8f9fa;
+    padding: 60px 0;
+}
+
+#habilidades h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    font-weight: bold;
+    color: #333;
+}
+
+#habilidades .progress {
+    height: 20px;
+    margin-bottom: 20px;
+}
+
+#habilidades .progress-bar {
+    background-color: #4CAF50;
+}
+
+/* Seção Experiência */
+#experiencia {
+    padding: 60px 0;
+}
+
+#experiencia h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    font-weight: bold;
+    color: #333;
+}
+
+#experiencia .card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+#experiencia p {
+    font-size: 1rem;
+    color: #666;
+}
+
+/* Seção Contato */
+#contato {
+    background-color: #333;
+    color: white;
+    padding: 60px 0;
+    text-align: center;
+}
+
+#contato h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    font-weight: bold;
+}
+
+#contato p {
+    font-size: 1.2rem;
+}
+
+#contato a {
+    color: white;
+    font-size: 1.1rem;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+#contato a:hover {
+    color: #17a2b8;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    #formacao .row {
+        flex-direction: column;
+    }
+
+    #habilidades .row {
+        flex-direction: column;
+    }
+
+    #experiencia .row {
+        flex-direction: column;
+    }
+}
