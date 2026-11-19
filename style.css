@@ -61,6 +61,105 @@ h1 span { color: var(--mint); }
 .tags li { padding: .2rem .65rem; border: 1px solid var(--line); border-radius: 2rem; background: var(--band); color: var(--green); font-size: .82rem; font-weight: 650; }
 .profile .tags li { border-color: #486257; background: #223a3b; color: var(--mint); }
 
+.game-eyebrow { margin-bottom: .55rem; color: var(--green); }
+#jogo h2 { margin-bottom: .8rem; }
+.game-intro { max-width: 42rem; margin-bottom: 1.4rem; color: var(--muted); }
+.game-shell {
+    overflow: hidden;
+    border: 1px solid #33475d;
+    border-radius: 1rem;
+    background: var(--navy);
+    color: white;
+}
+.game-toolbar, .game-controls {
+    display: flex;
+    align-items: center;
+    gap: .65rem;
+    padding: .65rem clamp(.7rem, 3vw, 1.25rem);
+}
+.game-toolbar { justify-content: space-between; color: var(--mint); font-size: .9rem; font-weight: 700; }
+.game-progress-group { display: grid; gap: .35rem; width: min(100%, 17rem); }
+.game-progress-group progress { width: 100%; height: .45rem; border: 0; border-radius: 1rem; accent-color: var(--mint); }
+.game-progress-group progress::-webkit-progress-bar { border-radius: 1rem; background: #33475d; }
+.game-progress-group progress::-webkit-progress-value { border-radius: 1rem; background: var(--mint); }
+.game-toolbar button, .game-controls button {
+    min-height: 2.75rem;
+    padding: .35rem .85rem;
+    border: 1px solid #65768a;
+    border-radius: .55rem;
+    background: var(--navy-light);
+    color: white;
+    font: inherit;
+    cursor: pointer;
+}
+.game-controls button { min-width: 3rem; touch-action: none; user-select: none; }
+.game-controls { flex-wrap: wrap; border-top: 1px solid #405063; }
+.game-controls > span { margin-right: .3rem; color: var(--light-text); font-size: .85rem; }
+.game-controls button:active { background: var(--mint); color: var(--navy); }
+.game-shell button:focus-visible, #career-game:focus-visible { outline: 3px solid var(--mint); outline-offset: -4px; }
+.game-world { position: relative; }
+.game-dialogue {
+    display: flex;
+    align-items: center;
+    gap: .85rem;
+    min-height: 5.8rem;
+    padding: .85rem clamp(.7rem, 3vw, 1.25rem);
+    border-block: 1px solid #466358;
+    background: #1b3439;
+}
+.game-dialogue-icon {
+    display: grid;
+    flex: 0 0 2.75rem;
+    height: 2.75rem;
+    place-items: center;
+    border-radius: .7rem;
+    background: #2d4a4c;
+    font-size: 1.3rem;
+}
+.game-speaker { color: var(--mint); font-size: .8rem; font-weight: 750; }
+.game-dialogue p { line-height: 1.4; }
+#career-game { display: block; width: 100%; height: 360px; }
+.game-start {
+    position: absolute;
+    inset: 0;
+    display: grid;
+    place-items: center;
+    background: rgb(16 24 39 / 45%);
+}
+.game-start[hidden] { display: none; }
+.game-start button { cursor: pointer; font-family: inherit; }
+.game-help {
+    display: flex;
+    flex-wrap: wrap;
+    gap: .4rem 1.15rem;
+    padding: .2rem clamp(.7rem, 3vw, 1.25rem) .85rem;
+    color: var(--light-text);
+    font-size: .85rem;
+}
+.game-help kbd {
+    display: inline-block;
+    min-width: 1.65rem;
+    padding-inline: .3rem;
+    border: 1px solid #65768a;
+    border-bottom-width: 2px;
+    border-radius: .3rem;
+    background: var(--navy-light);
+    color: white;
+    font: inherit;
+    font-weight: 700;
+    text-align: center;
+}
+.game-story {
+    min-height: 8rem;
+    padding: 1rem clamp(.7rem, 3vw, 1.25rem);
+    border-top: 1px solid #405063;
+    background: var(--navy-light);
+}
+.game-story p { max-width: 60rem; margin-top: .5rem; color: var(--light-text); }
+.game-story .game-role { color: var(--mint); font-weight: 700; font-size: .9rem; }
+.game-timeline-link { display: inline-block; margin-top: 1rem; color: var(--green); font-weight: 650; }
+#jogo + #projetos { padding-top: 0; }
+
 .project-grid, .skill-grid { display: grid; gap: 1rem; }
 .project-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 .project, .panel { padding: clamp(1.15rem, 3vw, 2rem); border: 1px solid var(--line); border-radius: 1rem; }

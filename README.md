@@ -4,6 +4,10 @@ Portfólio de desenvolvedor Java pleno full stack com experiência em Java, Spri
 
 [Visitar o portfólio](https://cspassos.github.io/portifolio/) · [Ver currículo em PDF](curriculo.pdf) · [LinkedIn](https://www.linkedin.com/in/caic-passos-a4131b94)
 
+## Minigame da trajetória
+
+Na seção **Minha carreira, fase a fase**, escolha **Começar a fase**. Use as setas para andar e Espaço para pular. Em telas de toque, use os botões abaixo do jogo. Cada plataforma revela uma etapa da experiência profissional.
+
 ## Projetos próprios
 
 | Projeto | Descrição |
@@ -26,4 +30,5 @@ Abra `index.html` no navegador. O site é estático, usa HTML e CSS e funciona s
 
 - [index.html](index.html) contém o conteúdo e a navegação.
 - [style.css](style.css) define o layout responsivo e os estilos.
+- [game.js](game.js) desenha a fase e usa a experiência profissional do site para montar os marcos.
 - [curriculo.pdf](curriculo.pdf) é o arquivo oferecido para download no site.
